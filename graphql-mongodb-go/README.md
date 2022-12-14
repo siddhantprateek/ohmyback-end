@@ -5,7 +5,7 @@ Integration of Mongodb and GraphQL
 
 ## Getting started
 
-![Reference](https://www.apollographql.com/blog/graphql/golang/using-graphql-with-golang/)
+[Reference](https://www.apollographql.com/blog/graphql/golang/using-graphql-with-golang/)
 
 Let’s get started by installing gqlgen and initializing our project. We can fetch the library using the following command.
 
