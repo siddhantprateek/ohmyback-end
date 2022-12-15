@@ -29,3 +29,10 @@ Finally, start the GraphQL server.
 ```shell
 go run server.go
 ```
+
+
+After Creating editing `schema.graphqls` run:
+```shell
+go run github.com/99designs/gqlgen generate
+```
+to generate graphql generator
