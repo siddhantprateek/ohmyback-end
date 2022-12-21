@@ -6,6 +6,7 @@
 ## Journey
 - [x] Create REST API using Golang
 - [x] Integration of Graphql and Document based database - MongoDB
+- [x] Create REST API using time series database - InfluxDB
 - [ ] Integration of Realtime database like firebase with Golang
 - [ ] Integration of Cassandra - Column-based database with Golang
 - [ ] JWT Token Authorization using Golang
