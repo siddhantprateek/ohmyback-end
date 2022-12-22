@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  web:
+    build:
+      context: Dockerfile # name of dockerfle
+    image: go-app-ms:latest
+    ports:
+      - "80:80"
+    restart: always
+    networks:
+      - web
+ 
