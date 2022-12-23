@@ -1,0 +1,47 @@
+type Employee struct {
+	_id     string `json:"_id"`
+	balance string `json:"balance"`
+	picture string `json:"picture"`
+	age     int    `json:"age"`
+	name    string `json:"name"`
+	gender  string `json:"gender"`
+	company string `json:"company"`
+	email   string `json:"company"`
+	phone   string `json:"phone"`
+}
+
+var employees = []Employee{
+	{
+		_id:     "63a5e4926313d2ecd456d7aa",
+		balance: "$1,294.13",
+		picture: "http://placehold.it/32x32",
+		age:     29,
+		name:    "Dorothy Jennings",
+		gender:  "female",
+		company: "SKYPLEX",
+		email:   "dorothyjennings@skyplex.com",
+		phone:   "+1 (928) 415-3616",
+	},
+	{
+		_id:     "63a5e4927237c14075601dc7",
+		balance: "$2,110.84",
+		picture: "http://placehold.it/32x32",
+		age:     32,
+		name:    "Fry Holmes",
+		gender:  "male",
+		company: "ICOLOGY",
+		email:   "fryholmes@icology.com",
+		phone:   "+1 (852) 454-2432",
+	},
+	{
+		_id:     "63a5e49280be5027c2ef6e84",
+		balance: "$3,134.82",
+		picture: "http://placehold.it/32x32",
+		age:     26,
+		name:    "Marshall Cotton",
+		gender:  "male",
+		company: "STROZEN",
+		email:   "marshallcotton@strozen.com",
+		phone:   "+1 (938) 546-2375",
+	},
+}
