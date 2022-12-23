@@ -16,7 +16,7 @@
 - [x] Create REST API using time series database - InfluxDB
 - [ ] Integration of Realtime database like firebase with Golang : _in-progress_
 - [ ] Integration of Cassandra - Column-based database with Golang
-- [ ] JWT Token Authorization using Golang
+- [x] JWT Endpoint Authorization using Golang
 - [ ] Auth0 authorization using Golang
 - [x] Create Microservices based application using Go
 - [ ] Redis Integration with Golang - Caching
