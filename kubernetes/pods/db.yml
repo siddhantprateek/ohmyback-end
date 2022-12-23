@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mongo-db
+  labels:
+    type: db
+    vendor: Mongo Labs
+  namespace: mem-example
+spec:
+  containers:
+  - name: mongo-db
+    image: mongodb:latest
+    command: ["mongodb"]
+    args: ["--rest", "httpinterface"]
