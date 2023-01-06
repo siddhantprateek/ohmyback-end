@@ -11,7 +11,6 @@ import (
 func main() {
 
 	router := mux.NewRouter()
-
 	// the Methods function adds a matcher for HTTP methods
 	// It accept a sequence of one or more methods to be matched
 	router.HandleFunc("/hello", handler.HelloHandler).Methods("HEAD")
