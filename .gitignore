@@ -2,3 +2,5 @@
 serviceAccount.json
 start_env.sh
 *.exe 
+
+/rest_postgres/data
