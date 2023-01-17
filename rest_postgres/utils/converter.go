@@ -9,12 +9,17 @@ import (
 	"strconv"
 	"strings"
 
+	database "github.com/siddhantprateek/ohmyback-end/rest_postgres/database"
 	model "github.com/siddhantprateek/ohmyback-end/rest_postgres/models"
 	"gorm.io/datatypes"
+	"gorm.io/gorm"
 )
 
 func ReadXMLs() {
-
+	var DB *gorm.DB
+	DB = database.DatabaseConnection()
+	// Need changes in model
+	DB.AutoMigrate(model.TrademarkApplication{})
 	for i := 1; i < 2; i++ {
 		ext := ".xml"
 		XMLFileName := strconv.Itoa(i) + ext
