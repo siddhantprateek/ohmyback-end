@@ -4,3 +4,5 @@ start_env.sh
 *.exe 
 
 /rest_postgres/data
+
+/go_s3_server/.aws/credentials
