@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-fiber-app-depolyment
+spec:
+  selector:
+    matchLabels:
+      app: go-fiber-app 
+  template:
+    metadata:
+      labels:
+        app: go-fiber-app
+    spec:
+      containers:
+      - name: go-fiber-app 
+        image: gcr.io/google-container/busybox
+        resources:
+          requests:
+            memory: "32Mi"
+            cpu: "100m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 4000
+
+--- 
+apiVersion: v1
+kind: Service
+metadata:
+  name: go-fiber-app
+spec:
+  type: LoadBalancer
+  selector:
+    app: go-fiber-app
+  ports:
+  - port: 4000
+    targetPort: 4000
