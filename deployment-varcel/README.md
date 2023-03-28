@@ -5,7 +5,7 @@ Make sure to add the vercel.json file so the routing will work properly with ver
 ```bash
 {
   "rewrites": [
-    { "source": "(.*)", "destination": "cmd/main.go" }
+    { "source": "(.*)", "destination": "api/index.go" }
   ]
 }
 ```
